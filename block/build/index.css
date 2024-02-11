@@ -1,0 +1,92 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+.wp-block-showcase-creator-posts-showcase-block {
+  border: 1px dashed #E7E9EB;
+  overflow: hidden;
+  min-height: 40px;
+}
+
+.block-editor-block-inspector .components-base-control {
+  width: 100% !important;
+  margin: 0;
+}
+.block-editor-block-inspector .components-flex.components-select-control {
+  gap: 2px !important;
+}
+
+.psc-inspector-controls-taxqueries {
+  list-style-type: none !important;
+  margin-left: 0 !important;
+}
+.psc-inspector-controls-taxqueries .components-base-control,
+.psc-inspector-controls-taxqueries .components-base-control__field,
+.psc-inspector-controls-taxqueries .components-form-token-field__label,
+.psc-inspector-controls-taxqueries .components-form-token-field__input-container,
+.psc-inspector-controls-taxqueries .components-form-token-field__help {
+  margin: 0 !important;
+}
+.psc-inspector-controls-taxqueries .components-form-token-field__input-container,
+.psc-inspector-controls-taxqueries .components-input-control__container {
+  background-color: #fff;
+}
+
+.psc-inspector-controls-taxqueries li {
+  background-color: #E7E9EB !important;
+  border-bottom: 1px solid #777;
+  padding: 8px;
+}
+
+.psc-inspector-controls-refresh-btn {
+  display: block;
+  margin: 0 auto 5px auto !important;
+  text-decoration: none !important;
+}
+
+.psc-inspector-controls-tab-panel .components-tab-panel__tabs {
+  display: flex;
+  flex-flow: row wrap;
+}
+.psc-inspector-controls-tab-panel .psc-controls-tab-active {
+  box-shadow: inset 0 var(--wp-admin-border-width-focus) var(--wp-admin-theme-color);
+  color: var(--wp-admin-theme-color);
+}
+
+.psc-inspector-controls-row-gap {
+  gap: 10px;
+}
+.psc-inspector-controls-row-gap .components-base-control__label {
+  margin-bottom: 0;
+}
+.psc-inspector-controls-row-gap .components-number-control {
+  gap: 0;
+}
+.psc-inspector-controls-row-gap .components-base-control:last-child {
+  margin-bottom: 0;
+}
+
+.psc-block-preview {
+  position: relative;
+}
+.psc-block-preview .components-toggle-control {
+  margin: 0;
+}
+
+.psc-block-preview-options {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  opacity: 0.6;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 0 10px;
+  padding: 5px;
+  z-index: 100;
+  transition: opacity 300ms ease;
+}
+
+.psc-block-preview-options:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=index.css.map*/

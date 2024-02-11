@@ -1,0 +1,29 @@
+.vid-toggle {
+  position: relative;
+  width: 48px;
+  height: 24px;
+  margin: 4px 0;
+  border-radius: 12px;
+  background-color: var(--vid-input-alt);
+  transition: background-color 300ms;
+}
+.vid-toggle::after {
+  content: "";
+  position: absolute;
+  left: 3px; top: 3px;
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 50%;
+  transition: left 300ms ease-out, background-color 300ms ease-out;
+}
+.vid-toggle[checked=true] {
+  background-color: var(--vid-input-act);
+}
+.vid-toggle[checked=true]::after {
+  background-color: var(--vid-input-bg);
+  left: 27px;
+}
+.vid-toggle.disabled { background-color: var(--vid-input-disabled); color: #aaa; }
+.vid-toggle-wrapper { display: flex; flex-flow: column nowrap; }
+.vid-toggle-wrapper.row { flex-flow: row nowrap; align-items: center; }

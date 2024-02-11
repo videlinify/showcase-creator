@@ -1,0 +1,23 @@
+:root {
+  --vid-input-color: #3c434a;
+  --vid-input-bg: #fff;
+  --vid-input-act: #00bfff;
+  --vid-input-alt: #ccc;
+  --vid-input-disabled: #ddd;
+  --vid-input-focus: #2376cc;
+  --vid-input-placeholder: #646970;
+  --vid-dark: #2271b1;
+  --vid-darker: #006ba1;
+  --vid-light: #f6f7f7;
+  --vid-lighter: #fff;
+  --vid-border-radius: 4px;
+  --vid-shadow: 2px 2px 6px 0px #00264daa;
+  --vid-destructive: #cc1818;
+  --vid-destructive-dark: #710d0d;
+  --vid-gap: 5px;
+  --vid-gap-plus: 10px;
+  --vid-gap-extra: 20px;
+}
+.vid-hidden { display: none !important; }
+.vid-label { font-size: 0.9em; }
+.vid-description { padding: 0 5px; font-size: 90%; font-style: italic; max-width: 160px; }

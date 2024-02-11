@@ -1,0 +1,24 @@
+{
+	"name": "showcase-creator-block",
+	"version": "0.1.0",
+	"description": "Displays posts with a custom layout using a custom post query that allows custom post ordering.",
+	"author": "Videlin Djedjev",
+	"license": "GPL-3.0-or-later",
+	"homepage": "https://videlinify.com",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --webpack-copy-php"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^25.5.0"
+	},
+	"dependencies": {
+		"html-react-parser": "^5.1.1"
+	}
+}

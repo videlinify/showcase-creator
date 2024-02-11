@@ -1,0 +1,29 @@
+.vid-foldable-panel {
+  padding: 0;
+  overflow: hidden !important;
+  align-self: flex-start;
+}
+.vid-foldable-panel-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  user-select: none;
+}
+.vid-foldable-panel-arrow { padding: 10px; font-size: 10px; }
+.vid-foldable-panel-body {
+  box-sizing: border-box;
+  border-top: 1px solid #0005;
+  padding: 0;
+  overflow: hidden !important;
+}
+.vid-foldable-panel-inner {
+  padding: 10px;
+}
+
+@media all and (max-width: 600px) {
+  .vid-foldable-panel { max-width: 100% !important; width: 100% !important; }
+}

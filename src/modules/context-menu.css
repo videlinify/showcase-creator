@@ -1,0 +1,48 @@
+.vid-context-menu {
+  position: fixed;
+  left: -1000px;
+  top: -1000px;
+  z-index: 10000;
+  width: max-content;
+  padding: 0;
+  margin: 0;
+  background-color: #e6f2ff;
+  border-radius: 5px;
+  -webkit-box-shadow: var(--vid-shadow);
+  box-shadow: var(--vid-shadow);
+  transition: max-height 300ms ease-out;
+  overflow: hidden;
+  user-select: none;
+}
+.vid-context-menu-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+.vid-context-menu-option {
+  width: 100%;
+  box-sizing: border-box;
+  color: #003166;
+  padding: 5px 10px;
+  background-color: transparent;
+  transition: background-color 300ms, color 300ms;
+  cursor: pointer;
+}
+.vid-context-menu-option:hover {
+  background-color: var(--vid-input-bg);
+  color: #0059b3;
+}
+.vid-context-menu-option.disabled {
+  width: 100%;
+  box-sizing: border-box;
+  color: #555;
+  padding: 5px 10px;
+  background-color: #ccc5;
+  cursor: not-allowed;
+}
+.vid-context-menu-label {
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 5px;
+}

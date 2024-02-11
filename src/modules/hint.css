@@ -1,0 +1,29 @@
+.vid-hint, .vid-hint-auto {
+  position: fixed;
+  z-index: 9100;
+  padding: 5px;
+  background-color: #333d;
+  color: #fff;
+  font-size: 0.9em;
+  -webkit-box-shadow: var(--vid-shadow);
+  box-shadow: var(--vid-shadow);
+  width: max-content;
+}
+
+.vid-hint-on-hover {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  cursor: 'help';
+  border: 1px solid var(--vid-dark);
+  border-radius: 50%;
+  margin: 0 4px;
+  vertical-align: super;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--vid-dark);
+  background-color: var(--vid-light)
+}

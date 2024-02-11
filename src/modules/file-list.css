@@ -1,0 +1,48 @@
+.vid-file-list {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--vid-gap);
+  align-items: center;
+}
+.vid-file-list .vid-items-list-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 100;
+  padding: 10px;
+}
+.vid-file-list .vid-items-list { font-size: 14px; }
+.vid-file-list .vid-items-list .item-body { background-color: var(--vid-darker); }
+.vid-file-list .vid-items-list .item.invalid .item-body { background-color: var(--vid-destructive); }
+.vid-file-list .vid-items-list .button-secondary { line-height: 1em; padding: 4px; min-height: 20px; max-height: 20px; background-color: var(--vid-darker); color: var(--vid-light); }
+.vid-file-list .vid-items-list .button-secondary.is-destructive { background-color: var(--vid-destructive); color: var(--vid-light); }
+.vid-file-list .vid-items-list .item-body { height: 30px; }
+.vid-file-list-url-wrapper { display: flex; flex-flow: row nowrap; gap: var(--vid-gap); }
+.vid-file-list .vid-input { max-width: 400px; flex-grow: 1; }
+.vid-file-list-drop-area {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: var(--var-dark);
+  background-image: linear-gradient(0deg, var(--vid-darker) 50%, transparent 0), linear-gradient(90deg, var(--vid-darker) 50%, transparent 0), linear-gradient(180deg, var(--vid-darker) 50%, transparent 0), linear-gradient(270deg, var(--vid-darker) 50%, transparent 0);
+  background-repeat: repeat-y, repeat-x, repeat-y, repeat-x;
+  background-size: 6px 32px, 32px 6px, 6px 32px, 32px 6px;
+  background-position: 0 100%, 0 0, 100% 0, 100% 100%;
+  animation: 5s linear infinite paused moving-dashes;
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  aspect-ratio: 1.5;
+  max-width: 70vw;
+  max-height: 70vh;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vid-file-list-drop-area.over { animation-play-state: running; }
+@keyframes moving-dashes {
+  from { background-position: 0 100%, 0 0, 100% 0, 100% 100%; }
+  to { background-position: 0 0, 100% 0, 100% 100%, 0 100%; }
+}
